@@ -1,0 +1,30 @@
+Mini-Aspire API
+
+Mini-Aspire is a mini application that allows authenticated users to go through a loan application process and submit loan repayments. It provides a RESTful API for managing loans and repayments.
+
+Installation
+1. Enter the folder:
+	cd mini-aspire-api
+2. Create a virtual environment and activate it:
+	python -m venv venv
+	source venv/bin/activate
+3. Install the dependencies:
+	pip install -r requirements.txt
+
+
+Usage
+1. Start the development server:
+	python Aspire_Mohit_Kuri.py
+2. The API will be accessible at http://localhost:5000.
+
+
+API Endpoints
+	POST /loans: Create a loan
+	PUT /loans/{loan_id}/approve: Approve a loan
+	GET /loans/{loan_id}: Get loan details
+	POST /loans/{loan_id}/repayments: Add a repayment to a loan
+
+
+Unit Tests
+	To run the unit tests, execute the following command:
+		python -m unit_test.py discover tests
